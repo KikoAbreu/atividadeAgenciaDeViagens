@@ -13,33 +13,72 @@
     
     <img src="./imagens/logoborala.png" alt="logoborala">
     
-    <!-- <h1 class="text-center text-white">Bora lá Viagens!</h1> -->
+    <!-- no css: definir a largura do header img 100% -->
    </header>
 
-        <!--Nav-->
-        
-        <ul class="nav d-flex justify-content-center shadow-sm">
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="destino.html">Destino</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="pacotes.html">Pacotes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="promocoes.html">Promoções</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-dark" href="contato.html">Contato</a>
-              </li>
-          </ul>
-        
-        <!--Nav-->
+       
         
         <section class="background-home p-4">
-            <h2 class="text-light">Ola</h2>
+          <div>
+            <!--Nav-->
+        
+        <ul class="nav d-flex justify-content-center shadow-sm bg-transparent">
+          <li class="nav-item">
+            <a class="nav-link active text-warning" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="destino.html">Destino</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="pacotes.html">Pacotes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="promocoes.html">Promoções</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link text-white" href="contato.html">Contato</a>
+            </li>
+        </ul>
+      
+      <!--Fim Nav-->    
+      </div>
+
+        <!--frase efeito-->
+        <div class="d-flex">
+          
+          <h2 class="text-warning p-1 mt-4">Muito mais </h2> 
+          <h2 class="text-white ml-0 p-1 mt-4">dinheiro no seu bolso, com os melhores preços!</h2>
+        </div>
+
+        <div class="d-flex mt-4">
+          <!--cx selecao ponto partida-->
+          <select class="form-select ml-5 bg-transparent text-white" aria-label="large select example">
+            <option selected>De onde você vai sair?</option>
+            <option value="1">São Paulo - SP</option>
+            <option value="2">Rio de Janeiro - RJ</option>
+            <option value="3">Recife - PE</option>
+          </select>
+          <!--fim cx selecao ponto partida-->
+
+           <!--cx selecao destino-->
+           <select class="form-select ml-5 bg-transparent text-white" aria-label="large select example">
+            <option selected>Para onde deseja ir?</option>
+            <option value="1">Gramado - RS</option>
+            <option value="2">Jericoacoara - CE</option>
+            <option value="3">Fernando de Noronha - PE</option>
+          </select>
+          <!--fim cx selecao destino-->
+         
+          <!-- data ida -->
+          <label for="exampleDateInput" class="form-label ml-3 p-2 text-white">Data da ida:</label>
+          <input type="date" class="form-control w-25" id="exampleDateInput" value="#563d7c" title="Data da ida">
+          <!-- data volta -->
+          <label for="exampleDateInput" class="form-label ml-2 mr-1 p-2 text-white">Data da volta:</label>
+          <input type="date" class="form-control w-25" id="exampleDateInput" value="#563d7c" title="Data da ida">
+
+          <!-- botton destino -->
+          <a class="btn btn-primary btn-sm h-25 p-2 ml-1" href="destino.html" role="button">Conferir agora!</a>
+        </div>
         </section>
 
         <div class="container-fluid">
