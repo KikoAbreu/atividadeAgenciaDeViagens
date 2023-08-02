@@ -46,9 +46,132 @@
       <!--Fim Nav-->
     </div>
 
-    <!--frase efeito-->
-    <div class="d-flex">
+  <!--frase efeito-->
+  <div class="d-flex">
 
-      <h2 class="text-warning p-1 mt-4">Muito mais </h2>
-      <h2 class="text-white ml-0 p-1 mt-4">pra aproveitar, com as melhores promocões!</h2>
+    <h2 class="text-warning p-1 mt-4">Você pode</h2>
+    <h2 class="text-white ml-0 p-1 mt-4">escolher o pacote ideal aqui!</h2>
+  </div>
+</section>
+  <div class="container d-lg-block mt-4">
+
+    <!--cx selecao ponto partida-->
+    <select class="form-select mt-1 mb-4 text-dark w-50" aria-label="large select example">
+        <option selected>De onde você vai sair?</option>
+        <option value="1">São Paulo - SP</option>
+        <option value="2">Rio de Janeiro - RJ</option>
+        <option value="3">Recife - PE</option>
+    </select>
+    <!--fim cx selecao ponto partida-->
+
+    <!--cx selecao destino-->
+    <select class="form-select mt-1 mb-2 bg-light w-50 text-dark" aria-label="large select example">
+        <option selected>Para onde deseja ir?</option>
+        <option value="1">Gramado - RS</option>
+        <option value="2">Jericoacoara - CE</option>
+        <option value="3">Fernando de Noronha - PE</option>
+    </select>
+    <!--fim cx selecao destino-->
+    <br>
+    <!-- data ida -->
+    <label for="exampleDateInput" class="form-label mt-lg-3 p-2 text-dark">Data da ida:</label>
+    <input type="date" class="form-control w-25 mt-0" id="exampleDateInput" value="#563d7c" title="Data da ida">
+    <!-- data volta -->
+    <label for="exampleDateInput" class="form-label mt-lg-3 mr-1 p-2 text-dark">Data da volta:</label>
+    <input type="date" class="form-control w-25 mt-0" id="exampleDateInput" value="#563d7c" title="Data da volta">
+
+    <!-- botton ir para destino -->
+    <a class="btn btn-success btn-sm h-25 p-2 mt-3 " href="destino.html" role="button">Ir para meu carrinho</a>
+</div>
+
+
+
+
+
+<!--CARDS GRANDES -->
+<div class="w-100 d-lg-flex p-5 justify-content-lg-center">   
+    <!-- inicio card 1-->
+    <section class="col-md-8 m-1">
+    <div class="card text-center m-1 w-100" style="width: 20rem;">
+      <img src="./imagens/jericoacoara.jpg" class="card-img-top img-thumbnail" alt="jericoacoara">
+    </div>   
+    </section>  
+      <div class="card-body">
+        <h4 class="card-title">Jericoacoara - CE</h4>
+        <h6>Promo Agosto 2023</h6>
+        <p class="card-text">Apenas para o mês de agosto, qualquer reserva para o pacote 2 entre os dias 10 e 30 com 25% de desconto!</p>
+        
+
+        <h6>Pacote 2</h6>
+        <p class="card-text">Passagem Ida e Volta + 5 dias de hospedagem + 5 passeios.</p>
+        <p class="font-weight-light">de</p>
+        <h6><s>R$999,00</s></h6>
+        <p class="font-weight-light">por</p>
+        <h5>R$749,25</h5>
+        <a href="#" class="btn btn-success">Reservar agora!</a>
+      </div>    
+    <!-- fim card 1-->
+</div>
+
+<div class="w-100 d-lg-flex p-5 justify-content-lg-center">
+     <!-- inicio card 2-->
+     <section class="col-md-8 m-1">
+     <div class="card text-center m-1 w-100" style="width: 20rem;">
+        <img src="./imagens/fernando-de-noronha.jpg" class="card-img-top img-thumbnail" alt="fernando-de-noronha">
+    </div>   
+    </section>
+        <div class="card-body">
+          <h5 class="card-title">Fernando de Noronha - PE</h5>
+          <h6>Promo Agosto 2023</h6>
+        <p class="card-text">Apenas para o mês de agosto, qualquer reserva para o pacote 1 entre os dias 10 e 30 com 20% de desconto!</p>
+        
+
+        <h6>Pacote 2</h6>
+        <p class="card-text">Passagem Ida e Volta + 5 dias de hospedagem + 5 passeios.</p>
+        <p class="font-weight-light">de</p>
+        <h6><s>R$1.049,00</s></h6>
+        <p class="font-weight-light">por</p>
+        <h5>R$839,20</h5>
+        <a href="#" class="btn btn-success">Reservar agora!</a>
+        </div>
+      
+      <!-- fim card 2-->
+</div>
+
+<div class="w-100 d-lg-flex p-5 justify-content-lg-center">
+    <!-- inicio card 3-->
+    <section class="col-md-8 m-1">
+    <div class="card text-center m-1 w-100" style="width: 20rem;">
+            <img src="./imagens/gramado-natal.jpg" class="card-img-top img-thumbnail" alt="gramado">
+    </div>   
+    </section>
+
+    <div class="card-body">
+        <h5 class="card-title">Gramado - RS</h5>
+        <h6>Promo Agosto 2023</h6>
+        <p class="card-text">Apenas para o mês de agosto, qualquer reserva para o pacote 2 entre os dias 10 e 30 com 25% de desconto!</p>
+        
+
+        <h6>Pacote 2</h6>
+        <p class="card-text">Passagem Ida e Volta + 5 dias de hospedagem + 5 passeios.</p>
+        <p class="font-weight-light">de</p>
+        <h6><s>R$2.749,00</s></h6>
+        <p class="font-weight-light">por</p>
+        <h5>R$2.061,75</h5>
+        <a href="#" class="btn btn-success">Reservar agora!</a>
     </div>
+     
+     <!-- fim card 3-->
+</div>
+
+
+
+    <footer class="text-center bg-light">
+        <hr>
+        <img src="./imagens/formas-de-pagamento.png" class="rounded mx-auto d-block" alt="formas-de-pagamento">
+        <hr>
+        <p class="font-weight-light">A Bora lá viagens, é o protótipo de uma âgencia de viagens utilizando HTML, CSS e Bootstrap. 
+          Feito para a entrega do Módulo 2 do Recode Pro 2023 por Kilderys Abreu.</p>
+        </footer>
+       
+</body>

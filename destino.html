@@ -55,10 +55,10 @@
     </section>
 
 
-    <div class="container d-lg-block mt-4 bg-light">
+    <div class="container d-lg-block mt-4">
 
         <!--cx selecao ponto partida-->
-        <select class="form-select form-select-lg mt-1 mb-5 bg-light text-dark w-75" aria-label="Large select example">
+        <select class="form-select form-select-lg mt-1 mb-4 text-dark w-50" aria-label="Large select example">
             <option selected>De onde você vai sair?</option>
             <option value="1">São Paulo - SP</option>
             <option value="2">Rio de Janeiro - RJ</option>
@@ -67,7 +67,7 @@
         <!--fim cx selecao ponto partida-->
 
         <!--cx selecao destino-->
-        <select class="form-select form-select-lg mt-1 mb-5 bg-light w-75 text-dark" aria-label="Large select example">
+        <select class="form-select form-select-lg mt-1 mb-2 bg-light w-50 text-dark" aria-label="Large select example">
             <option selected>Para onde deseja ir?</option>
             <option value="1">Gramado - RS</option>
             <option value="2">Jericoacoara - CE</option>
@@ -76,47 +76,83 @@
         <!--fim cx selecao destino-->
         <br>
         <!-- data ida -->
-        <label for="exampleDateInput" class="form-label mt-1 p-2 text-dark">Data da ida:</label>
+        <label for="exampleDateInput" class="form-label mt-lg-3 p-2 text-dark">Data da ida:</label>
         <input type="date" class="form-control w-25 mt-0" id="exampleDateInput" value="#563d7c" title="Data da ida">
         <!-- data volta -->
-        <label for="exampleDateInput" class="form-label mt-5 ml-2 mr-1 p-2 text-dark">Data da volta:</label>
+        <label for="exampleDateInput" class="form-label mt-lg-3 mr-1 p-2 text-dark">Data da volta:</label>
         <input type="date" class="form-control w-25 mt-0" id="exampleDateInput" value="#563d7c" title="Data da volta">
 
         <!-- botton ir para destino -->
-        <a class="btn btn-primary btn-sm h-25 p-2 ml-1 mt-3" href="destino.html" role="button">Ir para meu carrinho</a>
+        <a class="btn btn-primary btn-sm h-25 p-2 mt-3 " href="destino.html" role="button">Ir para meu carrinho</a>
     </div>
 
 
-    <div class="w-100 d-lg-flex p-5 justify-content-lg-center">
+    
+
+
+    <!--CARDS GRANDES -->
+    <div class="w-100 d-lg-flex p-5 justify-content-lg-center">   
         <!-- inicio card 1-->
-        <div class="card m-1" style="width: 20rem;">
-          <img src="./imagens/jericoacoara.jpg" class="card-img-top" alt="jericoacoara">
+        <section class="col-md-8 m-1">
+        <div class="card text-center m-1 w-100" style="width: 20rem;">
+          <img src="./imagens/jericoacoara.jpg" class="card-img-top img-thumbnail" alt="jericoacoara">
+        </div>   
+        </section>  
           <div class="card-body">
-            <h5 class="card-title">Jericoacoara - CE</h5>
-            <p class="card-text">Pacotes para curtir esse paraíso nas férias</p>
+            <h4 class="card-title">Jericoacoara - CE</h4>
+            <p class="card-text">Venha conhecer o melhor desse paraíso, uma das praias mais lindas do Brasil, por um preço que cabe no seu bolso.</p>
+            <p class="font-weight-light">a partir de</p>
+            <h5>R$535,00</h5>
             <a href="#" class="btn btn-primary">Saiba mais!</a>
-          </div>
-        </div>
+          </div>    
         <!-- fim card 1-->
-  
-        <!-- inicio card 2-->
-        <div class="card m-1" style="width: 20rem;">
-          <img src="./imagens/fernando-de-noronha.jpg" class="card-img-top" alt="fernando-de-noronha">
-          <div class="card-body">
-            <h5 class="card-title">Fernando de Noronha - PE</h5>
-            <p class="card-text">Pacote familia com com descontos incríveis</p>
-            <a href="#" class="btn btn-primary">Saiba mais!</a>
-          </div>
-        </div>
-        <!-- fim card 2-->
-  
+    </div>
+
+    <div class="w-100 d-lg-flex p-5 justify-content-lg-center">
+         <!-- inicio card 2-->
+         <section class="col-md-8 m-1">
+         <div class="card text-center m-1 w-100" style="width: 20rem;">
+            <img src="./imagens/fernando-de-noronha.jpg" class="card-img-top img-thumbnail" alt="fernando-de-noronha">
+        </div>   
+        </section>
+            <div class="card-body">
+              <h5 class="card-title">Fernando de Noronha - PE</h5>
+              <p class="card-text">Pacotes com hospedagem, translado, café da manhã, passeios, mergulhos e muito mais.</p>
+              <p class="font-weight-light">a partir de</p>
+              <h5>R$1.049,00</h5>
+              <a href="#" class="btn btn-primary">Saiba mais!</a>
+            </div>
+          
+          <!-- fim card 2-->
+    </div>
+
+    <div class="w-100 d-lg-flex p-5 justify-content-lg-center">
         <!-- inicio card 3-->
-        <div class="card m-1" style="width: 20rem;">
-          <img src="./imagens/gramado-natal.jpg" class="card-img-top" alt="gramado">
-          <div class="card-body">
+        <section class="col-md-8 m-1">
+        <div class="card text-center m-1 w-100" style="width: 20rem;">
+                <img src="./imagens/gramado-natal.jpg" class="card-img-top img-thumbnail" alt="gramado">
+        </div>   
+        </section>
+
+        <div class="card-body">
             <h5 class="card-title">Gramado - RS</h5>
-            <p class="card-text">Confira nossos pacotes para um dos maiores cartões postais do Brasil</p>
+            <p class="card-text">Venha conhecer todas as maravilhas desse primoroso cartão postal brasileiro.</p>
+            <p class="font-weight-light">a partir de</p>
+            <h5>R$1.599,00</h5>
             <a href="#" class="btn btn-primary">Saiba mais!</a>
-          </div>
         </div>
-        <!-- fim card 3-->
+         
+         <!-- fim card 3-->
+   </div>
+    
+
+
+        <footer class="text-center bg-light">
+            <hr>
+            <img src="./imagens/formas-de-pagamento.png" class="rounded mx-auto d-block" alt="formas-de-pagamento">
+            <hr>
+            <p class="font-weight-light">A Bora lá viagens, é o protótipo de uma âgencia de viagens utilizando HTML, CSS e Bootstrap. 
+              Feito para a entrega do Módulo 2 do Recode Pro 2023 por Kilderys Abreu.</p>
+            </footer>
+           
+</body>
