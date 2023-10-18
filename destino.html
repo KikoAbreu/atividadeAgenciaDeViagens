@@ -2,56 +2,105 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Destino - Bora Lá Viagens</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Destinos - Bora Lá Viagens</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+  rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+  crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
-    <header class="bg-warning p-3">
+<body class="container-fluid">
+<!-- Menu principal -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
 
-        <img src="./imagens/logoborala.png" alt="logoborala">
-
-        <!-- no css: definir a largura do header img 100% -->
-    </header>
-
-
-
-    <section class="background-home p-4">
-        <div>
-            <!--Nav-->
-
-            <ul class="nav d-flex justify-content-center shadow-sm bg-transparent">
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active text-warning" href="destino.html">Destino</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="pacotes.html">Pacotes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="promocoes.html">Promoções</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="contato.html">Contato</a>
-                </li>
-            </ul>
-
-            <!--Fim Nav-->
+    <a class="navbar-brand" href="#">
+      <img class="logopequena" src="./imagens/bora-la-logopequena-removebg.png" alt="boralalogo1">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      </ul>
+      <form class="d-flex" role="cadastro">
+        <div class="d-flex me-3 mb-2">
+          <li class="nav-item me-3">
+            <a class="nav-link" aria-current="page" href="www.facebook.com/">
+              <img class="icones-pequenos" src="./imagens/facebook-icon.png" alt="facebook-icon">
+            </a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link" href="www.instagram.com">
+              <img class="icones-pequenos" src="./imagens/instagram-icon.png" alt="instagram-icon">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="www.twitter.com">
+              <img class="icones-pequenos" src="./imagens/twitter-icon.png" alt="twitter-icon">
+            </a>
+          </li>
         </div>
+        <a href="cadastro.html">
+          <button class="btn btn-success mt-4 h-50 text-nowrap" type="button">Cadastre-se</button>
+        </a>
+    </div>
+  </div>
+</nav>
 
-        <!--frase efeito-->
-        <div class="d-flex">
 
-            <h2 class="text-warning p-1 mt-4">Os melhores </h2>
-            <h2 class="text-white ml-0 p-1 mt-4">destinos do Brasil. Escolha o seu!</h2>
-        </div>
+  <header class="bg-warning p-3">
+    <img src="./imagens/logoborala.png" alt="logoborala">
+    <!-- no css: definir a largura do header img 100% -->
+  </header>
+
+
+
+  <section class="background-home p-4">
+    
+    <!--Nav-->
+    <nav>
+    <div>
+      <ul class="nav d-flex justify-content-center shadow-sm bg-transparent">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active text-warning" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Destinos
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Região Norte e Nordeste</a></li>
+            <li><a class="dropdown-item" href="#">Região Sul e Central</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="destino.html">Todos os destinos</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="pacotes.html">Pacotes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="promocoes.html">Promoções</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="contato.html">Contato</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+      <!--Fim Nav-->
+    
+
+    <!--frase efeito-->
+    <div class="d-lg-flex">
+
+      <h2 class="text-warning p-1 mt-4">Os melhores </h2>
+      <h2 class="text-white ml-0 p-1 mt-4">destinos do Brasil, escolha o seu!</h2>
+    </div>
     </section>
 
 
@@ -67,7 +116,7 @@
         <!--fim cx selecao ponto partida-->
 
         <!--cx selecao destino-->
-        <select class="form-select form-select-lg mt-1 mb-2 bg-light w-50 text-dark" aria-label="Large select example">
+        <select class="form-select form-select-lg mt-1 mb-2  w-50 text-dark" aria-label="Large select example">
             <option selected>Para onde deseja ir?</option>
             <option value="1">Gramado - RS</option>
             <option value="2">Jericoacoara - CE</option>
@@ -85,7 +134,8 @@
         <!-- botton ir para destino -->
         <a class="btn btn-primary btn-sm h-25 p-2 mt-3 " href="destino.html" role="button">Ir para meu carrinho</a>
     </div>
-
+    <br>
+    <hr>
 
     
 
@@ -98,7 +148,7 @@
           <img src="./imagens/jericoacoara.jpg" class="card-img-top img-thumbnail" alt="jericoacoara">
         </div>   
         </section>  
-          <div class="card-body">
+          <div class="card-body ms-lg-3">
             <h4 class="card-title">Jericoacoara - CE</h4>
             <p class="card-text">Venha conhecer o melhor desse paraíso, uma das praias mais lindas do Brasil, por um preço que cabe no seu bolso.</p>
             <p class="font-weight-light">a partir de</p>
@@ -115,7 +165,7 @@
             <img src="./imagens/fernando-de-noronha.jpg" class="card-img-top img-thumbnail" alt="fernando-de-noronha">
         </div>   
         </section>
-            <div class="card-body">
+            <div class="card-body ms-lg-3">
               <h5 class="card-title">Fernando de Noronha - PE</h5>
               <p class="card-text">Pacotes com hospedagem, translado, café da manhã, passeios, mergulhos e muito mais.</p>
               <p class="font-weight-light">a partir de</p>
@@ -134,7 +184,7 @@
         </div>   
         </section>
 
-        <div class="card-body">
+        <div class="card-body ms-lg-3">
             <h5 class="card-title">Gramado - RS</h5>
             <p class="card-text">Venha conhecer todas as maravilhas desse primoroso cartão postal brasileiro.</p>
             <p class="font-weight-light">a partir de</p>
@@ -149,10 +199,11 @@
 
         <footer class="text-center bg-light">
             <hr>
-            <img src="./imagens/formas-de-pagamento.png" class="rounded mx-auto d-block" alt="formas-de-pagamento">
+            <img src="./imagens/formas-de-pagamento.png" class="rounded mx-auto d-block footer-img" alt="formas-de-pagamento">
             <hr>
             <p class="font-weight-light">A Bora lá viagens, é o protótipo de uma âgencia de viagens utilizando HTML, CSS e Bootstrap. 
               Feito para a entrega do Módulo 2 do Recode Pro 2023 por Kilderys Abreu.</p>
             </footer>
-           
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
 </body>
